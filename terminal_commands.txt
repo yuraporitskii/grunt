@@ -1,0 +1,66 @@
+cd ../../Volumes/Workspace/CACHE/GITHUB/standarts
+
+
+cd /d D:\WORKSPACE\GITHUB\standarts
+
+
+
+npm install grunt --save-dev
+npm install time-grunt --save
+npm install load-grunt-config --save-dev
+npm install grunt-contrib-imagemin --save-dev
+npm install grunt-contrib-uglify --save-dev
+npm install grunt-contrib-concat --save-dev
+npm install grunt-contrib-cssmin --save-dev
+npm install grunt-contrib-watch --save-dev
+npm install grunt-autoprefixer --save-dev
+npm install grunt-ftpush --save-dev
+npm install grunt-contrib-copy --save-dev
+npm install grunt-string-replace --save-dev
+npm install grunt-contrib-clean --save-dev
+npm install grunt-data-uri --save-dev
+npm install grunt-contrib-htmlmin --save-dev
+npm install grunt-inline-imgsize --save-dev
+npm install grunt-w3c-html-validation --save-dev
+npm install grunt-csscomb --save-dev
+npm install grunt-htmlcomb --save-dev
+npm install grunt-criticalcss --save-dev
+npm install grunt-prettify --save-dev
+npm install grunt-sass --save-dev 
+npm install grunt-jsbeautifier --save-dev
+
+
+
+npm rebuild node-sass 
+npm install phantom --save-dev
+
+Gruntfile.coffee:
+
+imagemin:
+  files:
+    expand: true
+    cwd: 'src/img'
+    src: ['**/*.{png,jpg,gif}']
+    dest: 'theme/public/img/'
+Command:
+
+grunt imagemin --stack
+Result:
+
+Running "imagemin:files" (imagemin) task
+Fatal error: write EPIPE
+Error: write EPIPE
+    at errnoException (net.js:904:11)
+    at Object.afterWrite (net.js:720:19)
+Solution
+
+Deleted the node_modules/grunt-contrib-imagemin folder.
+Ran npm install. All four pre-build tests passed.
+Re-ran grunt imagemin and it worked.
+
+bower install backstopjs
+cd bower_components/backstopjs
+npm install slimerjs
+
+npm run reference
+npm run test
