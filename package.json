@@ -40,13 +40,11 @@
     "grunt-unused": "^0.2.3",
     "grunt-w3c-html-validation": "^0.1.8",
     "grunt-w3c-validation": "^0.1.16",
-    "load-grunt-config": "^0.19.2",
-    "phantom": "^3.0.2"
+    "load-grunt-config": "^0.19.2"
   },
   "dependencies": {
     "critical": "^0.7.2",
     "jshint-stylish": "^2.2.0",
-    "phantom": "^3.0.2",
     "time-grunt": "^1.4.0"
   }
 }
